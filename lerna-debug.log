@@ -1,0 +1,22 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '8.1.8',
+0 silly argv   '$0': '..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.8
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack
+4 info current version 1.0.0
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 error Error: Command failed with exit code 128: git rev-parse --abbrev-ref HEAD
+8 error fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+8 error Use '--' to separate paths from revisions, like this:
+8 error 'git <command> [<revision>...] -- [<file>...]'
+8 error HEAD
+8 error     at makeError (C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack\node_modules\execa\lib\error.js:59:11)
+8 error     at module.exports.sync (C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack\node_modules\execa\index.js:186:17)
+8 error     at Object.execSync (C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack\node_modules\lerna\dist\index.js:1579:31)
+8 error     at getCurrentBranch (C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack\node_modules\lerna\dist\index.js:9007:33)
+8 error     at VersionCommand.initialize (C:\Users\Windows 10\Desktop\wjwgithub\MyWebpack\node_modules\lerna\dist\index.js:9452:32)
